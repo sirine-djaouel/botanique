@@ -1,0 +1,1338 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*navigation*/
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color:#f0fff0 ;
+    position: sticky;
+    top: 0px;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 16%;
+    text-align: center;
+    font-family: 'Elsie', cursive;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+#bande {
+    background-color: lightBlue;
+    width: auto;
+    height: 200px;
+    background-image: url(bande.jpg);
+    
+    }
+h1{
+    text-align: center;
+    font-family: 'Elsie', cursive;
+}
+
+.Texte{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Elsie', cursive;
+    font-size: 35px;
+}
+
+body{
+    height: 1vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*fin de la navigation*/ 
+
+/*début accueil*/
+
+.centerBox{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 300px;
+    margin-left: 90px;
+    background-color: #b0f2b6;
+    width: 25%;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+
+.Accueil{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5%;
+}
+
+.Accueil:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+
+.Accueil:hover:after{
+    opacity: 0.4;
+  }
+
+  .Accueil h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .Accueil:hover h1{
+    transform: translateY(-10px);
+  }
+  .Accueil button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+
+  .Accueil button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .Accueil button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Accueil:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .Accueil button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Accueil:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Accueil button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Accueil :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Accueil button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Accueil:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Accueil button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .Accueil:hover button > span > span > span{
+    color:white;
+  }
+  
+  .Accueil button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .Accueil button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+        
+  .conteneur{
+    display: flex;
+}
+
+.Plantes{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Plantes:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Plantes:hover:after{
+    opacity: 0.4;
+  }
+  
+  .Plantes h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .Plantes:hover h1{
+    transform: translateY(-10px);
+  }
+  .Plantes button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+    
+  }
+
+  .Plantes button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+  }
+  
+  .Plantes button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Plantes:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .Plantes button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .Plantes:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Plantes button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Plantes :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Plantes button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Plantes:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Plantes button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .Plantes:hover button > span > span > span{
+    color:white;
+  }
+  
+  .Plantes button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .Plantes button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+  .Fleurs{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Fleurs:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Fleurs:hover:after{
+    opacity: 0.4;
+  } 
+  
+  .Fleurs h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .Fleurs:hover h1{
+    transform: translateY(-10px);
+  }
+  .Fleurs button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+
+  .Fleurs button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .Fleurs button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Fleurs:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .Fleurs button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .Fleurs:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Fleurs button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Fleurs :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Fleurs button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Fleurs:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Fleurs button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .Fleurs:hover button > span > span > span{
+    color:white;
+  }
+  
+  .Fleurs button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .Fleurs button:hover > span > span > span:after{
+    width: 100%;
+  }
+  .centerBox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-left: 287px;
+    background-color: #b0f2b6;
+    width: 25%;
+    margin-top: 50px;
+    margin-right: -50px;
+    border-radius: 5%;
+}
+.centerBox2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 300px;
+    margin-left: 200px;
+    background-color: #b0f2b6;
+    width: 25%;
+    margin-top: 50px;
+    border-radius: 5%;
+}
+.conteneur1{
+    display: flex;
+    margin-bottom: 40px;
+}
+  .Arbustes{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Arbustes:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Arbustes:hover:after{
+    opacity: 0.4;
+  } 
+  
+  .Arbustes h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .Arbustes:hover h1{
+    transform: translateY(-10px);
+  }
+  .Arbustes button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+
+  .Arbustes button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .Arbustes button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Arbustes:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .Arbustes button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .Arbustes:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Arbustes button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Arbustes :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Arbustes button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Arbustes:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Arbustes button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .Arbustes:hover button > span > span > span{
+    color:white;
+  }
+  
+  .Arbustes button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .Arbustes button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+
+  .Legumes{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Legumes:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Legumes:hover:after{
+    opacity: 0.4;
+  } 
+  
+  .Legumes h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .Legumes:hover h1{
+    transform: translateY(-10px);
+  }
+  .Legumes button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+
+  .Legumes button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .Legumes button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .Legumes:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .Legumes button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .Legumes:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Legumes button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Legumes :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Legumes button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  
+  .Legumes:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  
+  .Legumes button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  
+  .Legumes:hover button > span > span > span{
+    color:white;
+  }
+  
+  .Legumes button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  
+  .Legumes button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+
+
+/* Fin Accueil*/ 
+
+ /* Présentation*/
+
+ a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .0);
+    
+}
+
+a:hover {
+    color: white;
+}
+
+a:active{
+    color: white;
+}
+
+#bande{
+    background-image: url(bande.jpg);
+}
+#bande1{
+    background-image: url(bande.jpg);
+        background-color: lightBlue;
+        width: 1440px;
+        height: 200px;
+}       
+ 
+.conteneurP{
+    display: flex;
+}
+.avatar{
+    width: 300px;
+    background-color: yellow;
+    height: 300px;
+    margin-top: 50px;
+    float: left;
+    border:3px double black;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5%;
+}
+
+.texte{
+    width: 1400px;
+    background-color: #7CC589;
+    height: 300px;
+    margin-top: 50px;
+    float: right;
+    border:3px double black;
+    margin-right: 50px;
+    border-radius: 5%;
+  
+ 
+}
+
+.conteneurP1{
+    display: flex;
+}
+.avatar1{
+    width: 300px;
+    background-color: yellow;
+    height: 300px;
+    margin-top: 50px;
+    float: right;
+    border:3px double black;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 5%;
+    
+}
+
+.texte1{
+    width: 1400px;
+    background-color: #7CC589 ;
+    height: 300px;
+    margin-top: 50px;
+    float: left;
+    border:3px double black;
+    margin-left: 50px;
+    border-radius: 5%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    
+  }
+  .polaroid > img{
+    max-width: 100%;
+    height: auto;
+  }
+  .caption {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+  }
+  .item {
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+  }
+  .item .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+  }
+
+  .item:nth-of-type(4n+1) .polaroid:before {
+    transform: rotate(6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+  .item:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+2) .polaroid:before {
+    transform: rotate(-6deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  }
+  .item:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+4) .polaroid:before {
+    transform: rotate(4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  }
+  .item:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+    transition: all 0.35s;
+  }
+  .item:nth-of-type(4n+3) .polaroid:before {
+    transform: rotate(-4deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    left: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  }
+
+  .item:hover {
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;}
+
+.item:hover .polaroid:before {
+    content: '';
+        position: absolute;
+        z-index: -1;
+        transform: rotate(0deg);
+        height: 90%;
+        width: 90%;
+        bottom: 0%;
+        right: 5%;
+        box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+        transition: all 0.35s;
+      }
+.paragraphe{
+       
+        width: 25%;
+        margin-left: 50px;
+        margin-top: 15px;
+        border: 3px double black;
+        font-family: 'Maitree', serif;
+       
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+/*Début du footer*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center; 
+    width: 100%;
+    margin-left: 250px; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    }
+
+.footer{
+    background-color: #24262b;
+    padding: 20px 0;
+    font-family: 'Elsie', cursive;
+    margin: auto;
+    
+    
+}
+
+.footer1{
+    width: 25%;
+    padding: 0 15px;
+    
+}
+
+.footer1 h4{
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  
+}
+
+.footer1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background-color: #b0f2b6;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    margin-left: 60px;
+}
+
+.footer1 ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.footer1 ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer1 ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    
+}
+
+.footer1 ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer1 .s-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+/*fin du footer*/
